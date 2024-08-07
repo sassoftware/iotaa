@@ -5,8 +5,7 @@
 
  The purpose is to facilitate sharing code and data needed to customers from published technical papers from the IOTAA team. A link to ALL Technical papers published within SAS can be found at [Technical Papers | SAS Support](https://support.sas.com/en/technical-papers.html)
 
-** Technical Papers linked to this repository:**
-
+**Technical Papers linked to this repository:**
 
 - Coming soon: Time-Frequency Analysis  Methods and Applications in SAS®
 - Coming soon: Fault Identification Using Dynamic Bayesian Networks
