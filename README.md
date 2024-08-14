@@ -7,8 +7,8 @@
 
 **Technical Papers linked to this repository:**
 
-- Coming soon: Time-Frequency Analysis  Methods and Applications in SAS®
-- Coming soon: Fault Identification Using Dynamic Bayesian Networks
+- [Time-Frequency Analysis  Methods and Applications in SAS®](https://support.sas.com/content/dam/SAS/support/en/technical-papers/time-frequency-analysis-methods-and-applications-in-sas.pdf)
+- [Fault Identification Using Dynamic Bayesian Networks](https://support.sas.com/content/dam/SAS/support/en/technical-papers/fault-identification-using-dynamic-bayesian-networks.pdf)
 
 ### List of Examples
 | File/Folder | Application |
