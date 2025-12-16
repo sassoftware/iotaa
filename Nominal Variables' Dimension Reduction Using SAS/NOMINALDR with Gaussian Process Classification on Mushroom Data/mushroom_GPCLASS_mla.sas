@@ -18,11 +18,11 @@ Copyright � 2025, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.
 SPDX-License-Identifier: Apache-2.0
 *********************************************************************************************************/
 
-proc import datafile="/sasuser/mushroomTrain.csv"
+proc import datafile="mushroomTrain.csv" /*or user-defined location*/
     out=Train dbms=csv replace; getnames=yes;
 run;
 
-proc import datafile="/sasuser/mushroomTest.csv"
+proc import datafile="mushroomTest.csv" /*or user-defined location*/
     out=Test dbms=csv replace; getnames=yes;
 run;
 
@@ -65,6 +65,7 @@ run;
 proc print data=GPCLASS_mcaStd_train(obs=5);
     title "First Five Observations from PROC GPCLASS on MCA-Reduced and Standardized Mushroom Data";
 run;
+title;
 
 proc assess data=GPCLASS_mcaStd_train ncuts=20 nbins=5;
     var P_poisonousp;
@@ -102,14 +103,11 @@ proc print data=GPCLASS_FITSTAT_MCAStd;
 run;
 title;
 
-ods listing gpath='/sasuser' image_dpi=300;
-ods graphics /  noborder imagename='ROC_GPCLASS_MCAStd' imagefmt=png ; 
 proc sgplot data=ROCInfo_mcaStd_test noborder nowall;
-   series x=FPR y=Sensitivity / lineattrs=(color=blue);
-   xaxis label="false positive rate";
-   yaxis label="true positive rate (sensitivity)";
+   series x=FPR y=Sensitivity / lineattrs=(color=blue thickness=2);
+   xaxis label="False Positive Rate";
+   yaxis label="True Positive Rate (Sensitivity)";
 run;
-ods graphics off;
 
 /* Dimension Reduction using LPCA */
 proc NOMINALDR data=Train dimension=&dimension method=LPCA m=4 maxiter=200 prefix=lpca_rv;
@@ -175,15 +173,13 @@ run;
 proc print data=GPCLASS_FITSTAT_LPCAStd;
     title "Scoring Statistics of PROC GPCLASS for the LPCA-Reduced and Standardized Mushroom Data";
 run;
+title;
 
-ods listing gpath='/sasuser' image_dpi=300;
-ods graphics /  noborder imagename='ROC_GPCLASS_LPCAStd' imagefmt=png ; 
 proc sgplot data=ROCInfo_lpcaStd_test noborder nowall;
-   series x=FPR y=Sensitivity / lineattrs=(color=blue);
-   xaxis label="false positive rate";
-   yaxis label="true positive rate (sensitivity)";
+   series x=FPR y=Sensitivity / lineattrs=(color=blue thickness=2);
+   xaxis label="False Positive Rate";
+   yaxis label="True Positive Rate (Sensitivity)";
 run;
-ods graphics off;
 
 /* plot the ROC curves together */
 /* Merge horizontally by CutOff */
@@ -193,15 +189,12 @@ data ROCInfo_all_test;
     by CutOff;
 run;
 
-ods listing gpath='/sasuser' image_dpi=300;
-ods graphics /  noborder imagename='ROC_GPCLASS_all' imagefmt=png ; 
 proc sgplot data=ROCInfo_all_test noborder nowall;
    series x=FPR_MCA y=Sensitivity_MCA / lineattrs=(color=blue pattern=Dash thickness=2) 
-          legendlabel="MCA-Reduced";
+          legendlabel="MCA-reduced";
    series x=FPR_LPCA y=Sensitivity_LPCA / lineattrs=(color=red pattern=ShortDash thickness=2) 
-          legendlabel="LPCA-Reduced";
+          legendlabel="LPCA-reduced";
    xaxis label="False Positive Rate";
    yaxis label="True Positive Rate (Sensitivity)";
    keylegend / location=inside position=bottomright;
 run;
-ods graphics off;

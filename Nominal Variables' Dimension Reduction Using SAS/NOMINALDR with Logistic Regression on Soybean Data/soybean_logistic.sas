@@ -20,11 +20,11 @@ Copyright � 2025, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.
 SPDX-License-Identifier: Apache-2.0
 *********************************************************************************************************/
 
-proc import datafile="/sasuser/soybean-large.data"
+proc import datafile="soybean-large.data" /*or user-defined location*/
     out=Train dbms=csv replace; getnames=yes;
 run;
 
-proc import datafile="/sasuser/soybean-large.test"
+proc import datafile="soybean-large.test" /*or user-defined location*/
     out=Test dbms=csv replace; getnames=yes;
 run;
 
@@ -136,6 +136,7 @@ quit;
 proc print data =lpcaTrain(obs=5);
     title "First Five Observations of the LPCA-Reduced Soybean Data";
 run;
+title;
 
 /* LPCA */
 %let t0=%sysfunc(datetime());
@@ -171,8 +172,3 @@ proc print data=Logistic_LPCA_Soybean;
     title "Runtimes and Scoring Statistics of PROC LOGISTIC for the LPCA-Reduced Soybean Data";
 run;
 title;
-
-/* proc datasets library=work kill; */
-/* quit; */
-/* proc datasets library=_SASUSR_ kill; */
-/* quit; */
