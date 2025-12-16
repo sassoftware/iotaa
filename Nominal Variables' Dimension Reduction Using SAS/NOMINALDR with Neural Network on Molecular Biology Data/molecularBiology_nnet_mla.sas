@@ -20,11 +20,11 @@ SPDX-License-Identifier: Apache-2.0
 *********************************************************************************************************/
 
 
-proc import datafile="/sasuser/molecularBiologyTrain.csv" /*or other user-defined location*/
+proc import datafile="molecularBiologyTrain.csv" /*or user-defined location*/
     out=Train dbms=csv replace; getnames=yes;
 run;
 
-proc import datafile="/sasuser/molecularBiologyTest.csv" /*or other user-defined location*/
+proc import datafile="molecularBiologyTest.csv" /*or user-defined location*/
     out=Test dbms=csv replace; getnames=yes;
 run;
 
@@ -56,6 +56,7 @@ run;
 proc print data=nnetTrain(obs=5);
     title "First Five Observations of Prediction from PROC NNET on the Original Molecular Biology Training Data";
 run;
+title;
 
 proc assess data=nnetTrain ncuts=20 nbins=2;
    var P_classN;
@@ -94,14 +95,11 @@ proc print data=NNET_FITSTAT_ORIGINAL noobs;
 run;
 title;
 
-ods listing gpath='/sasuser' image_dpi=300;
-ods graphics /  noborder imagename='ROC_NNET_Original' imagefmt=png ; 
 proc sgplot data=ROCInfo_original_test noborder nowall;
-   series x=FPR y=Sensitivity / lineattrs=(color=blue);
-   xaxis label="false positive rate";
-   yaxis label="true positive rate (sensitivity)";
+   series x=FPR y=Sensitivity / lineattrs=(color=blue thickness=2);
+   xaxis label="False Positive Rate";
+   yaxis label="True Positive Rate (Sensitivity)";
 run;
-ods graphics off;
 
 /* NOMINALDR with MCA */
 %let t0=%sysfunc(datetime());
@@ -122,6 +120,7 @@ quit;
 proc print data=mcaTrain(obs=5);
     title "First Five Observations of the MCA-Reduced Molecular Biology Training Data";
 run;
+title;
 
 /* NNET with MCA-Reduced Data */
 %let t0=%sysfunc(datetime());
@@ -174,14 +173,11 @@ proc print data=NNET_FITSTAT_MCA noobs;
 run;
 title;
 
-ods listing gpath='/sasuser' image_dpi=300;
-ods graphics /  noborder imagename='ROC_NNET_MCA' imagefmt=png ; 
 proc sgplot data=ROCInfo_mca_test noborder nowall;
-   series x=FPR y=Sensitivity / lineattrs=(color=blue);
-   xaxis label="false positive rate";
-   yaxis label="true positive rate (sensitivity)";
+   series x=FPR y=Sensitivity / lineattrs=(color=blue thickness=2);
+   xaxis label="False Positive Rate";
+   yaxis label="True Positive Rate (Sensitivity)";
 run;
-ods graphics off;
 
 /* NOMINALDR with LPCA */
 %let t0=%sysfunc(datetime());
@@ -253,14 +249,11 @@ proc print data=NNET_FITSTAT_LPCA noobs;
 run;
 title;
 
-ods listing gpath='/sasuser' image_dpi=300;
-ods graphics /  noborder imagename='ROC_NNET_LPCA' imagefmt=png ; 
 proc sgplot data=ROCInfo_lpca_test noborder nowall;
-   series x=FPR y=Sensitivity / lineattrs=(color=blue);
-   xaxis label="false positive rate";
-   yaxis label="true positive rate (sensitivity)";
+   series x=FPR y=Sensitivity / lineattrs=(color=blue thickness=2);
+   xaxis label="False Positive Rate";
+   yaxis label="True Positive Rate (Sensitivity)";
 run;
-ods graphics off;
 
 /* Plot the ROC together */
 /* Merge horizontally by CutOff */
@@ -271,15 +264,11 @@ data ROCInfoNNET_all_test;
     by CutOff;
 run;
 
-ods listing gpath='/sasuser' image_dpi=300;
-/* ods listing gpath='/u/yoyanz/sas_code' image_dpi=300; */
-ods graphics /  noborder imagename='ROC_NNET_all' imagefmt=png ; 
 proc sgplot data=ROCInfoNNET_all_test noborder nowall;
     series x=FPR_Original y=Sensitivity_Original / lineattrs=(color=black pattern=Solid thickness=2) legendlabel="Original";
-    series x=FPR_MCA y=Sensitivity_MCA / lineattrs=(color=blue pattern=Dash thickness=2) legendlabel="MCA-Reduced";
-    series x=FPR_LPCA y=Sensitivity_LPCA / lineattrs=(color=red pattern=ShortDash thickness=2) legendlabel="LPCA-Reduced";
+    series x=FPR_MCA y=Sensitivity_MCA / lineattrs=(color=blue pattern=Dash thickness=2) legendlabel="MCA-reduced";
+    series x=FPR_LPCA y=Sensitivity_LPCA / lineattrs=(color=red pattern=ShortDash thickness=2) legendlabel="LPCA-reduced";
     xaxis label="False Positive Rate";
     yaxis label="True Positive Rate (Sensitivity)";
     keylegend / location=inside position=bottomright;
 run;
-ods graphics off;
