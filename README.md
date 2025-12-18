@@ -20,9 +20,9 @@
 Signal Processing Methods and Applications in SAS/Examples and Datasets/Feature Extraction from EEG using EMD| Analyzing EEG Signals|
 |Signal Processing Methods and Applications in SAS/Examples and Datasets/Queen Bee Piping Part I and Part II|Queen Bee Piping Example 1|
 |Signal Processing Methods and Applications in SAS/Examples and Datasets/Queen Bee Piping Part I and Part II|Queen Bee Piping Example 2|
-|Nominal Variables Dimension Reduction Using SAS/PROC NOMINALDR with Logistic Regression on Soybean Data | Preprocessing Soybean Data using PROC NOMINALDR for Logistic Regression|
-|Nominal Variables Dimension Reduction Using SAS/PROC NOMINALDR with Neural Network on Molecular Biology Data | Preprocessing Molecular Biology Data using PROC NOMINALDR for Neural Network|
-|Nominal Variables Dimension Reduction Using SAS/PROC NOMINALDR with Gaussian Process Classification on Mushroom Data | Preprocessing Mushroom Data using PROC NOMINALDR for Gaussian Process Classification|
+|Nominal Variables' Dimension Reduction Using SAS/PROC NOMINALDR with Logistic Regression on Soybean Data | Preprocessing Soybean Data using PROC NOMINALDR for Logistic Regression|
+|Nominal Variables' Dimension Reduction Using SAS/PROC NOMINALDR with Neural Network on Molecular Biology Data | Preprocessing Molecular Biology Data using PROC NOMINALDR for Neural Network|
+|Nominal Variables' Dimension Reduction Using SAS/PROC NOMINALDR with Gaussian Process Classification on Mushroom Data | Preprocessing Mushroom Data using PROC NOMINALDR for Gaussian Process Classification|
 
 ### List of Datasets required for Examples
 | File/Folder | Application |
@@ -32,9 +32,9 @@ Signal Processing Methods and Applications in SAS/Examples and Datasets/Feature 
 |Signal Processing Methods and Applications in SAS/Examples and Datasets/Feature Extraction from EEG using EMD/eeg.sas7bdat| Dataset used for EEG feature extraction.
 |Signal Processing Methods and Applications in SAS/Examples and Datasets/Music Decomposition with EMD and HHT| Three audio files used for the music decomposition example. The files are bass.wav, flute.wav, combo.wav| 
 |Signal Processing Methods and Applications in SAS/Examples and Datasets/Queen Bee Piping Part I and Part II|Three sas datasets needed to run the Queen bee piping detection examples. The datasets are fs.sas7bdat, spectral_adj.sas7bdat, and spectral_data.sas7bdat|
-|Nominal Variables Dimension Reduction Using SAS/PROC NOMINALDR with Logistic Regression on Soybean Data | A folder containing Soybean datasets for PROC NOMINALDR and PROC LOGISTIC: soybean-large.data for training and soybean-large.test for testing|
-|Nominal Variables Dimension Reduction Using SAS/PROC NOMINALDR with Neural Network on Molecular Biology Data | A folder containing Molecular Biology Datasets for PROC NOMINALDR and PROC NNET: molecularBiologyTrain.csv for training and molecularBiologyTest.csv for testing|
-|Nominal Variables Dimension Reduction Using SAS/PROC NOMINALDR with Gaussian Process Classification on Mushroom Data | A folder containing Mushroom Datasets for PROC NOMINALDR and PROC GPCLASS: mushroomTrain.csv for training and mushroomTest.csv for testing|
+|Nominal Variables' Dimension Reduction Using SAS/PROC NOMINALDR with Logistic Regression on Soybean Data | A folder containing Soybean datasets for PROC NOMINALDR and PROC LOGISTIC: soybean-large.data for training and soybean-large.test for testing|
+|Nominal Variables' Dimension Reduction Using SAS/PROC NOMINALDR with Neural Network on Molecular Biology Data | A folder containing Molecular Biology Datasets for PROC NOMINALDR and PROC NNET: molecularBiologyTrain.csv for training and molecularBiologyTest.csv for testing|
+|Nominal Variables' Dimension Reduction Using SAS/PROC NOMINALDR with Gaussian Process Classification on Mushroom Data | A folder containing Mushroom Datasets for PROC NOMINALDR and PROC GPCLASS: mushroomTrain.csv for training and mushroomTest.csv for testing|
 
 
 ### Installation
