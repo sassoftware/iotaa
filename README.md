@@ -9,7 +9,7 @@
 
 - [Time-Frequency Analysis  Methods and Applications in SAS®](https://support.sas.com/content/dam/SAS/support/en/technical-papers/time-frequency-analysis-methods-and-applications-in-sas.pdf)
 - [Fault Identification Using Dynamic Bayesian Networks](https://support.sas.com/content/dam/SAS/support/en/technical-papers/fault-identification-using-dynamic-bayesian-networks.pdf)
-- [Nominal Variables’ Dimension Reduction Using SAS]()
+- [Nominal Variables Dimension Reduction Using SAS](https://support.sas.com/content/dam/SAS/support/en/technical-papers/nominal-variables-dimension-reduction-using-sas.pdf)
 
 ### List of Examples
 | File/Folder | Application |
@@ -20,9 +20,9 @@
 Signal Processing Methods and Applications in SAS/Examples and Datasets/Feature Extraction from EEG using EMD| Analyzing EEG Signals|
 |Signal Processing Methods and Applications in SAS/Examples and Datasets/Queen Bee Piping Part I and Part II|Queen Bee Piping Example 1|
 |Signal Processing Methods and Applications in SAS/Examples and Datasets/Queen Bee Piping Part I and Part II|Queen Bee Piping Example 2|
-|Nominal Variables’ Dimension Reduction Using SAS/NOMINALDR with Logistic Regression on Soybean Data | Preprocessing Soybean Data using PROC NOMINALDR for Logistic Regression|
-|Nominal Variables’ Dimension Reduction Using SAS/NOMINALDR with Neural Network on Molecular Biology Data | Preprocessing Molecular Biology Data using PROC NOMINALDR for Neural Network|
-|Nominal Variables’ Dimension Reduction Using SAS/NOMINALDR with Gaussian Process Classification on Mushroom Data | Preprocessing Mushroom Data for Gaussian Process Classification|
+|Nominal Variables’ Dimension Reduction Using SAS/PROC NOMINALDR with Logistic Regression on Soybean Data | Preprocessing Soybean Data using PROC NOMINALDR for Logistic Regression|
+|Nominal Variables’ Dimension Reduction Using SAS/PROC NOMINALDR with Neural Network on Molecular Biology Data | Preprocessing Molecular Biology Data using PROC NOMINALDR for Neural Network|
+|Nominal Variables’ Dimension Reduction Using SAS/PROC NOMINALDR with Gaussian Process Classification on Mushroom Data | Preprocessing Mushroom Data using PROC NOMINALDR for Gaussian Process Classification|
 
 ### List of Datasets required for Examples
 | File/Folder | Application |
@@ -32,9 +32,9 @@ Signal Processing Methods and Applications in SAS/Examples and Datasets/Feature 
 |Signal Processing Methods and Applications in SAS/Examples and Datasets/Feature Extraction from EEG using EMD/eeg.sas7bdat| Dataset used for EEG feature extraction.
 |Signal Processing Methods and Applications in SAS/Examples and Datasets/Music Decomposition with EMD and HHT| Three audio files used for the music decomposition example. The files are bass.wav, flute.wav, combo.wav| 
 |Signal Processing Methods and Applications in SAS/Examples and Datasets/Queen Bee Piping Part I and Part II|Three sas datasets needed to run the Queen bee piping detection examples. The datasets are fs.sas7bdat, spectral_adj.sas7bdat, and spectral_data.sas7bdat|
-|Nominal Variables’ Dimension Reduction Using SAS/NOMINALDR with Logistic Regression on Soybean Data | A folder containing Soybean datasets for PROC NOMINALDR and PROC LOGISTIC: soybean-large.data for training and soybean-large.test for testing|
-|Nominal Variables’ Dimension Reduction Using SAS/NOMINALDR with Neural Network on Molecular Biology Data | A folder containing Molecular Biology Datasets for PROC NOMINALDR and PROC NNET: molecularBiologyTrain.csv for training and molecularBiologyTest.csv for testing|
-|Nominal Variables’ Dimension Reduction Using SAS/NOMINALDR with Gaussian Process Classification on Mushroom Data | A folder containing Mushroom Datasets for PROC NOMINALDR and PROC GPCLASS: mushroomTrain.csv for training and mushroomTest.csv for testing|
+|Nominal Variables’ Dimension Reduction Using SAS/PROC NOMINALDR with Logistic Regression on Soybean Data | A folder containing Soybean datasets for PROC NOMINALDR and PROC LOGISTIC: soybean-large.data for training and soybean-large.test for testing|
+|Nominal Variables’ Dimension Reduction Using SAS/PROC NOMINALDR with Neural Network on Molecular Biology Data | A folder containing Molecular Biology Datasets for PROC NOMINALDR and PROC NNET: molecularBiologyTrain.csv for training and molecularBiologyTest.csv for testing|
+|Nominal Variables’ Dimension Reduction Using SAS/PROC NOMINALDR with Gaussian Process Classification on Mushroom Data | A folder containing Mushroom Datasets for PROC NOMINALDR and PROC GPCLASS: mushroomTrain.csv for training and mushroomTest.csv for testing|
 
 
 ### Installation
@@ -72,15 +72,15 @@ SAS Institute Inc. (2024c). SAS IML: Language Reference. Retrieved from  https:/
 
 SAS Institute Inc. (2024d). Using Dynamic Bayesian Networks. Retrieved from https://go.documentation.sas.com/api/collections/espcdc/v_048/docsets/espan/content/espan.pdf?locale=en#nameddest=n1a24zmowg07opn1ul03ulh6g23c. 
 
-SAS Institute Inc. (2025a). GPCLASS Procedure. Retrieved from https://go.documentation.sas.com/api/collections/workbenchcdc/v_001/docsets/vwbcasml/content/vwbcasml.pdf?locale=en#nameddest=vwbcasml_gpclass_toc.
+SAS Institute Inc. (2025a). GPCLASS Procedure. Retrieved from https://go.documentation.sas.com/api/collections/pgmsascdc/v_069/docsets/casml/content/casml.pdf?locale=it#nameddest=casml_gpclass_toc.
 
 SAS Institute Inc. (2025b). LOGISTIC Procedure. Retrieved from https://go.documentation.sas.com/doc/en/pgmsascdc/v_068/statug/statug_logistic_toc.htm.
 
-SAS Institute Inc. (2025c). NNET Procedure. Retrieved from https://go.documentation.sas.com/api/collections/workbenchcdc/v_001/docsets/vwbcasml/content/vwbcasml.pdf?locale=en#nameddest=vwbcasml_nnet_toc.
+SAS Institute Inc. (2025c). NNET Procedure. Retrieved from https://go.documentation.sas.com/api/collections/pgmsascdc/v_069/docsets/casml/content/casml.pdf?locale=it#nameddest=casml_nnet_toc.
 
-SAS Institute Inc. (2025d). NOMINALDR Procedure. Retrieved from https://go.documentation.sas.com/api/collections/workbenchcdc/v_001/docsets/vwbcasml/content/vwbcasml.pdf?locale=en#nameddest=vwbcasml_nominaldr_toc.
+SAS Institute Inc. (2025d). NOMINALDR Procedure. Retrieved from https://go.documentation.sas.com/api/collections/pgmsascdc/v_069/docsets/casml/content/casml.pdf?locale=it#nameddest=casml_nominaldr_toc.
 
-SAS Institute Inc. (2025e). STDIZE Procedure. Retrieved from https://go.documentation.sas.com/doc/en/pgmsascdc/v_068/statug/statug_stdize_toc.htm. 
+SAS Institute Inc. (2025e). STDIZE Procedure. Retrieved from https://go.documentation.sas.com/doc/en/pgmsascdc/v_068/statug/statug_stdize_toc.htm.
 
 
 ## <a name="ref"> </a> References for Fault Identification Using Dynamic Bayesian Networks
@@ -108,23 +108,24 @@ Nuttall, A. 1981. “Some Windows with Very Good Sidelobe Behavior.” IEEE Tran
 SAS Institute Inc. (2024). SAS IML: Language Reference. Retrieved from https://pubshelpcenter.unx.sas.com/test/doc/en/pgmsascdc/v_052/casimllang/titlepage.htm. 
 
 
-## <a name="ref"> </a> References for Nominal Variables' Dimension Reduction Using SAS
+## <a name="ref"> </a> References for Nominal Variables Dimension Reduction Using SAS
 
-Abdi, H., and Valentin, D. (2007). “Multiple correspondence analysis.” Encyclopedia of measurement and statistics, 2(4), 651-657. https://personal.utdallas.edu/~Herve/Abdi-MCA2007-pretty.pdf.
+Abdi, H., and Valentin, D. (2007). “Multiple Correspondence Analysis.” In Salkind, N. J., ed., Encyclopedia of Measurement and Statistics, 1–13. Thousand Oaks, CA: Sage Publications. Available at https://personal.utdallas.edu/~herve/Abdi-MCA2007-pretty.pdf.
 
-De Leeuw, J. (2006). “Principal Component Analysis of Binary Data by Iterated Singular Value Decomposition.” Computational Statistics and Data Analysis 50:21–39. https://www.sciencedirect.com/science/article/pii/S0167947304002300.
+De Leeuw, J. (2006). “Principal Component Analysis of Binary Data by Iterated Singular Value Decomposition.” Computational Statistics and Data Analysis 50:21–39. Available at https://www.sciencedirect.com/science/article/pii/S0167947304002300.
 
-Greenacre, M. (2017). “Correspondence Analysis in Practice (3rd ed.).” Chapman and Hall/CRC. https://doi.org/10.1201/97813153699.
+Greenacre, M. (2017). Correspondence Analysis in Practice. 3rd ed. Boca Raton, FL: Chapman and Hall/CRC. 
 
-Khangar, N. V., and Kamalja, K. K. (2017). “Multiple Correspondence Analysis and its applications.” Electronic Journal of Applied Statistical Analysis, 10(2), 432-462. https://www.academia.edu/125560871/Multiple_Correspondence_Analysis_and_its_applications.
+Khangar, N. V., and Kamalja, K. K. (2017). “Multiple Correspondence Analysis and Its Applications.” Electronic Journal of Applied Statistical Analysis 10(2), 432–462. Available at https://www.academia.edu/125560871/Multiple_Correspondence_Analysis_and_its_applications.
 
-Landgraf, A. J., and Lee, Y. (2020). “Dimensionality Reduction for Binary Data through the Projection of Natural Parameters.” Journal of Multivariate Analysis 180:104668. https://www.sciencedirect.com/science/article/pii/S0047259X20302499.
+Landgraf, A. J., and Lee, Y. (2020). “Dimensionality Reduction for Binary Data through the Projection of Natural Parameters.” Journal of Multivariate Analysis 180:104668. Available at https://www.sciencedirect.com/science/article/pii/S0047259X20302499.
 
-Michalski, R.S., and Chilausky, R.L. UCI Machine Learning Repository (1980). “Soybean (Large).” UCI MLR. https://doi.org/10.24432/C5JG6Z.
+Michalski, R. S., and Chilausky, R. L. UCI Machine Learning Repository (1980). “Soybean (Large).” UCI MLR. Available at https://doi.org/10.24432/C5JG6Z.
 
-UCI Machine Learning Repository (1991). “Molecular Biology (Splice-Junction Gene Sequences).” UCI
-MLR. https://doi.org/10.24432/C5M888. 
 
-UCI Machine Learning Repository (1981). “Mushroom.” UCI MLR. https://doi.org/10.24432/C5959T.
+Schein, A. I., Saul, L. K., and Ungar, L. H. (2003). “A Generalized Linear Model for Principal Component Analysis of Binary Data.” In Proceedings of the Ninth International Workshop on Artificial Intelligence and Statistics, 240–247. PMLR. Available at http://proceedings.mlr.press/r4/schein03a/schein03a.pdf.
 
-Schein, A. I., Saul, L. K., and Ungar, L. H. (2003). “A Generalized Linear Model for Principal Component Analysis of Binary Data.” In Proceedings of the Ninth International Workshop on Artificial Intelligence and Statistics, 240–247. PMLR. http://proceedings.mlr.press/r4/schein03a/schein03a.pdf.
+UCI Machine Learning Repository (1991). “Molecular Biology (Splice-Junction Gene Sequences).” UCI MLR. Available at https://doi.org/10.24432/C5M888. 
+
+UCI Machine Learning Repository (1981). “Mushroom.” UCI MLR. Available at https://doi.org/10.24432/C5959T.
+
