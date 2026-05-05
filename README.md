@@ -1,9 +1,8 @@
 # IOTAA Repo for Technical Papers
 
-
 ## Overview
 
- The purpose is to facilitate sharing code and data needed to customers from published technical papers from the IOTAA team. A link to ALL Technical papers published within SAS can be found at [Technical Papers | SAS Support](https://support.sas.com/en/technical-papers.html)
+The purpose is to facilitate sharing code and data needed to customers from published technical papers from the IOTAA team. A link to ALL Technical papers published within SAS can be found at [Technical Papers | SAS Support](https://support.sas.com/en/technical-papers.html)
 
 **Technical Papers linked to this repository:**
 
@@ -11,7 +10,11 @@
 - [Fault Identification Using Dynamic Bayesian Networks](https://support.sas.com/content/dam/SAS/support/en/technical-papers/fault-identification-using-dynamic-bayesian-networks.pdf)
 - [Nominal Variables Dimension Reduction Using SAS](https://support.sas.com/content/dam/SAS/support/en/technical-papers/nominal-variables-dimension-reduction-using-sas.pdf)
 
-### List of Examples
+## What's New
+
+No updates as of 2/13/24
+
+## List of Examples
 | File/Folder | Application |
 | ------ | ------ |
 |Fault Identification Using Dynamic Bayesian Networks/TE.sas| Fault identification using dynamic Bayesian networks for Tennessee Eastman chemical plant process.|
@@ -24,7 +27,7 @@ Signal Processing Methods and Applications in SAS/Examples and Datasets/Feature 
 |Nominal Variables' Dimension Reduction Using SAS/PROC NOMINALDR with Neural Network on Molecular Biology Data | Preprocessing Molecular Biology Data using PROC NOMINALDR for Neural Network|
 |Nominal Variables' Dimension Reduction Using SAS/PROC NOMINALDR with Gaussian Process Classification on Mushroom Data | Preprocessing Mushroom Data using PROC NOMINALDR for Gaussian Process Classification|
 
-### List of Datasets required for Examples
+## List of Datasets required for Examples
 | File/Folder | Application |
 | ------ | ------ |
 |Fault Identification Using Dynamic Bayesian Networks/TE| A folder containing data for TE.sas. Generated using PROC IML code based on code from [Ricker (2002).](#te)|
@@ -36,25 +39,16 @@ Signal Processing Methods and Applications in SAS/Examples and Datasets/Feature 
 |Nominal Variables' Dimension Reduction Using SAS/PROC NOMINALDR with Neural Network on Molecular Biology Data | A folder containing Molecular Biology Datasets for PROC NOMINALDR and PROC NNET: molecularBiologyTrain.csv for training and molecularBiologyTest.csv for testing|
 |Nominal Variables' Dimension Reduction Using SAS/PROC NOMINALDR with Gaussian Process Classification on Mushroom Data | A folder containing Mushroom Datasets for PROC NOMINALDR and PROC GPCLASS: mushroomTrain.csv for training and mushroomTest.csv for testing|
 
-
-### Installation
+## Installation
 All code requires software that runs SAS IML and other procs in SAS such as SAS Viya. For more information please see [SAS.com](https://www.sas.com/en_us/home.html)
 
-### What's New
-
-No updates as of 2/13/24
-
 ## Contributing
+**Required**: If you are part of IOTAA and would like to contribute to this repository, please email `laura.gonzalez@sas.com` to be added as a collaborator. 
 
-**Required**. If you are part of IOTAA and would like to contribute to this repository, please email laura.gonzalez@sas.com to be added as a collaborator. 
-
-> We welcome your contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to submit contributions to this project. 
-
-
+We welcome your contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to submit contributions to this project. 
 
 ## License
-
-> This project is licensed under the [Apache 2.0 License](LICENSE).
+This project is licensed under the [Apache 2.0 License](LICENSE).
 
 ## Additional Resources
 
@@ -81,7 +75,6 @@ SAS Institute Inc. (2025c). NNET Procedure. Retrieved from https://go.documentat
 SAS Institute Inc. (2025d). NOMINALDR Procedure. Retrieved from https://go.documentation.sas.com/api/collections/pgmsascdc/v_069/docsets/casml/content/casml.pdf?locale=it#nameddest=casml_nominaldr_toc.
 
 SAS Institute Inc. (2025e). STDIZE Procedure. Retrieved from https://go.documentation.sas.com/doc/en/pgmsascdc/v_068/statug/statug_stdize_toc.htm.
-
 
 ## <a name="ref"> </a> References for Fault Identification Using Dynamic Bayesian Networks
 
@@ -128,4 +121,3 @@ Schein, A. I., Saul, L. K., and Ungar, L. H. (2003). “A Generalized Linear Mod
 UCI Machine Learning Repository (1991). “Molecular Biology (Splice-Junction Gene Sequences).” UCI MLR. Available at https://doi.org/10.24432/C5M888. 
 
 UCI Machine Learning Repository (1981). “Mushroom.” UCI MLR. Available at https://doi.org/10.24432/C5959T.
-
